@@ -6,7 +6,10 @@ function NameList(){
         <React.Fragment>
             <h1>Name List</h1>
             <ul>
-                <NameListItem/>
+                <NameListItem name="Dilshan" degree="CST"/>
+                <NameListItem name="Mahesh" degree="IIT"/>
+                <NameListItem name="Idunil" degree="MRT"/>
+                <NameListItem name="Asmika" degree="SCT"/>
             </ul>
         </React.Fragment>
     );

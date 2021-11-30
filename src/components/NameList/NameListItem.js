@@ -1,8 +1,8 @@
 import React from "react";
 
-function NameListItem(){
+function NameListItem(props){
     return(
-        <li>Dilshan - CST</li>
+        <li>{props.name} - {props.degree}</li>
     );
 }
 
