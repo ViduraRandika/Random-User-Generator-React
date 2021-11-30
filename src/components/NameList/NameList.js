@@ -26,10 +26,14 @@ function NameList(){
         <React.Fragment>
             <h1>Name List</h1>
             <ul>
-                <NameListItem name="Dilshan" degree="CST"/>
-                <NameListItem name="Mahesh" degree="IIT"/>
-                <NameListItem name="Idunil" degree="MRT"/>
-                <NameListItem name="Asmika" degree="SCT"/>
+                <NameListItem 
+                    dp={NameList.picture.medium}
+                    name={NameList.name.title + "." + NameList.name.first + " " + NameList.name.last} 
+                    gender={NameList.gender}
+                    city={NameList.city}
+                    email={NameList.email}
+                    dob={NameList.dob.date + " & " + NameList.dob.age + " years old"}
+                    phone={NameList.phone}/>
             </ul>
         </React.Fragment>
     );
