@@ -1,3 +1,10 @@
+# Install these extentions in VS Code when work with React
+
+ES7 React/Redux/GraphQL/React-Native snippets
+Material Icon Theme
+Prettier - Code formatter
+Bracket Pair Colorizer
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
