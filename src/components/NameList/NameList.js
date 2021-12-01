@@ -14,7 +14,7 @@ function NameList(){
         "email": "brad.gibson@example.com",
         "dob": {
             "date": "1993-07-20T09:44:18.674Z",
-            "age": 26
+            "age": 28
           },
           "phone": "011-962-7516",
           "picture": {
@@ -32,7 +32,8 @@ function NameList(){
                     gender={NameList.gender}
                     city={NameList.city}
                     email={NameList.email}
-                    dob={`${NameList.dob.date} & ${NameList.dob.age} years old`}                    
+                    dob={`${NameList.dob.date}`} 
+                    age={`${NameList.dob.age}`}                                      
                     phone={NameList.phone}/>
             </ul>
         </React.Fragment>

@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 
 function NameListItem(props){
     return(
@@ -8,7 +9,7 @@ function NameListItem(props){
             <p>Gender : {props.gender}</p>
             <p>City : {props.city}</p>
             <p>Email : {props.email}</p>
-            <p>DOB : {props.dob}</p>
+            <p>DOB : {moment(props.dob).format('DD-MM-YYYY')} and {props.age} years old</p>
             <p>Phone : {props.phone}</p>
         </li>
     );
