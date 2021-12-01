@@ -40,30 +40,28 @@ function NameList(){
           },
     }];
 
+    const NameListComponent = () =>{
+        return NameList.map((aName) => {
+            return(
+                <NameListItem 
+                    dp={aName.picture.medium}
+                    name={`${aName.name.title}.${aName.name.first} ${aName.name.last}`} 
+                    gender={aName.gender}
+                    city={aName.city}
+                    email={aName.email}
+                    dob={aName.dob.date} 
+                    age={aName.dob.age}                                      
+                    phone={aName.phone}
+                />
+            );
+        });
+    };
+
     return(
         <React.Fragment>
             <h1>Name List</h1>
             <ul>
-                <NameListItem 
-                    dp={NameList[0].picture.medium}
-                    name={`${NameList[0].name.title}.${NameList[0].name.first} ${NameList[0].name.last}`} 
-                    gender={NameList[0].gender}
-                    city={NameList[0].city}
-                    email={NameList[0].email}
-                    dob={`${NameList[0].dob.date}`} 
-                    age={`${NameList[0].dob.age}`}                                      
-                    phone={NameList[0].phone}/>
-            </ul>
-            <ul>
-                <NameListItem 
-                    dp={NameList[1].picture.medium}
-                    name={`${NameList[1].name.title}.${NameList[1].name.first} ${NameList[1].name.last}`} 
-                    gender={NameList[1].gender}
-                    city={NameList[1].city}
-                    email={NameList[1].email}
-                    dob={`${NameList[1].dob.date}`} 
-                    age={`${NameList[1].dob.age}`}                                      
-                    phone={NameList[1].phone}/>
+                {NameListComponent()}
             </ul>
         </React.Fragment>
     );
