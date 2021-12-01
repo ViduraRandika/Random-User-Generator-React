@@ -5,6 +5,10 @@ Material Icon Theme\
 Prettier - Code formatter\
 Bracket Pair Colorizer
 
+# A free, open-source API for generating random user data. Like Lorem Ipsum, but for people.
+
+https://randomuser.me/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

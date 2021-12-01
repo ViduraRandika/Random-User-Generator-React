@@ -3,7 +3,7 @@ import React from "react";
 function NameListItem(props){
     return(
         <li>
-            <p><img src="{props.dp}" alt="This is dp"></img></p>
+            <p><img src={props.dp} alt="This is dp"></img></p>
             <p>Name : {props.name}</p>
             <p>Gender : {props.gender}</p>
             <p>City : {props.city}</p>
