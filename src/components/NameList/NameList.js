@@ -4,6 +4,7 @@ import NameListItem from "./NameListItem";
 function NameList(){
 
     const NameList = [{
+        "id": 1,
         "name": {
             "title": "Mr",
             "first": "Brad",
@@ -22,6 +23,7 @@ function NameList(){
           },
     },
     {
+        "id": 2,
         "name": {
             "title": "Mr",
             "first": "Clifford",
@@ -44,6 +46,7 @@ function NameList(){
         return NameList.map((aName) => {
             return(
                 <NameListItem 
+                    key={aName.id}
                     dp={aName.picture.medium}
                     name={`${aName.name.title}.${aName.name.first} ${aName.name.last}`} 
                     gender={aName.gender}
