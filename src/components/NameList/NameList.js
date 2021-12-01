@@ -28,11 +28,11 @@ function NameList(){
             <ul>
                 <NameListItem 
                     dp={NameList.picture.medium}
-                    name={NameList.name.title + "." + NameList.name.first + " " + NameList.name.last} 
+                    name={`${NameList.name.title}.${NameList.name.first} ${NameList.name.last}`} 
                     gender={NameList.gender}
                     city={NameList.city}
                     email={NameList.email}
-                    dob={NameList.dob.date + " & " + NameList.dob.age + " years old"}
+                    dob={`${NameList.dob.date} & ${NameList.dob.age} years old`}                    
                     phone={NameList.phone}/>
             </ul>
         </React.Fragment>
