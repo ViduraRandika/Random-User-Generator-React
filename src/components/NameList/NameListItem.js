@@ -5,14 +5,18 @@ import './NameListItem.css';
 
 function NameListItem(props){
     return(
-        <li>
-            <p><img src={props.dp} alt={props.name}></img></p>
-            <p style={{'color':'red'}}>Name : {props.name}</p>
-            <p className="greenText">Gender : {props.gender}</p>
-            <p>City : {props.city}</p>
-            <p>Email : {props.email}</p>
-            <p>DOB : {moment(props.dob).format('DD-MM-YYYY')} and {props.age} years old</p>
-            <p>Phone : {props.phone}</p>
+        <li className="list-group-item shadow">
+            <div className="row align-items-center">
+                <div className="col-12 col-sm-2 col-md-2">
+                    <p><img src={props.dp} alt={props.name} className="border border-dark rounded-circle shadow"></img></p>
+                </div>
+                <div className="col col-sm col-md">
+                    <h5 style={{'color':'red'}}>Name : {props.name}</h5>
+                    <p className="greenText">Gender : {props.gender}</p>
+                    {props.city} | {props.email} | {props.phone}
+                    <p>{moment(props.dob).format('DD-MM-YYYY')} and {props.age} years old</p>
+                </div>
+            </div>
         </li>
     );
 }

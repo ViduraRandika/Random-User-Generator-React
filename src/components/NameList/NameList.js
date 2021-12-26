@@ -60,12 +60,12 @@ function NameList(){
         });
     };
 
+    //mt-4 means margin top 4
     return(
         <React.Fragment>
-            <h1>Name List</h1>
-            <ul>
-                {NameListComponent()}
-            </ul>
+            <div className="container mt-4">
+                <ul className="list-group">{NameListComponent()}</ul>
+            </div>
         </React.Fragment>
     );
 }
