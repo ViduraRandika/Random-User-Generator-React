@@ -6,7 +6,7 @@ import './NameListItem.css';
 function NameListItem(props){
     return(
         <li>
-            <p><img src={props.dp} alt="This is dp"></img></p>
+            <p><img src={props.dp} alt={props.name}></img></p>
             <p style={{'color':'red'}}>Name : {props.name}</p>
             <p className="greenText">Gender : {props.gender}</p>
             <p>City : {props.city}</p>
