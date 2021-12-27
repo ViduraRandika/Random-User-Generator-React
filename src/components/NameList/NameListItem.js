@@ -11,7 +11,7 @@ function NameListItem(props){
                     <p><img src={props.dp} alt={props.name} className="border border-dark rounded-circle shadow"></img></p>
                 </div>
                 <div className="col col-sm col-md">
-                    <h5 style={{'color':'red'}}>Name : {props.name}</h5>
+                    <h5 style={{'color':'red'}}>{props.name}</h5>
                     <p className="greenText">Gender : {props.gender}</p>
                     {props.city} | {props.email} | {props.phone}
                     <p>{moment(props.dob).format('DD-MM-YYYY')} and {props.age} years old</p>

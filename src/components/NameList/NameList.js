@@ -2,7 +2,7 @@ import React, {useState,useEffect} from "react";
 import NameListItem from "./NameListItem";
 
 function NameList(){
-    const [loadData, setLoadData] = useState(false);
+    const [loadData, setLoadData] = useState(new Date());
     const [nameList, setNameList] = useState([
         {
         "id": 1,
@@ -74,31 +74,7 @@ function NameList(){
     };
 
     const addUserHandler = () => {
-        const newUser =
-            {
-            "id": new Date(),
-            "name": {
-                "title": "Mr",
-                "first": "Brad",
-                "last": "Gibson"
-                },
-            "gender": "male",
-            "city": "kilcoole",
-            "email": "brad.gibson@example.com",
-            "dob": {
-                "date": "1993-07-20T09:44:18.674Z",
-                "age": "28"
-                },
-                "phone": "011-962-7516",
-                "picture": {
-                "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
-                },
-            }
-
-        //setNameList((nameList) => nameList.concat(newUser));
-
-        //this is spread operator
-        setNameList((nameList) => [...nameList, newUser]);
+        setLoadData(new Date());
      }
 
     //mt-4 means margin top 4
