@@ -2,7 +2,8 @@ import React, {useState,useEffect} from "react";
 import NameListItem from "./NameListItem";
 
 function NameList(){
-    const [NameList, setNameList] = useState([
+    const [loadData, setLoadData] = useState(false);
+    const [nameList, setNameList] = useState([
         {
         "id": 1,
         "name": {
@@ -44,11 +45,18 @@ function NameList(){
     );
 
     useEffect(() => {
-        console.log('Render Method Called');
-    });
+        //console.log('Render Method Called');
+        fetch("https://randomuser.me/api").then(response => {
+            //console.log(response);
+            return response.json();
+        }).then(responseData => {
+            //console.log(responseData.results[0]);
+            setNameList((nameList) => [...nameList, responseData.results[0]]);
+        })
+    }, [loadData]);
 
-    const NameListComponent = () =>{
-        return NameList.map((aName) => {
+    const nameListComponent = () =>{
+        return nameList.map((aName) => {
             return(
                 <NameListItem 
                     key={aName.id}
@@ -87,10 +95,10 @@ function NameList(){
                 },
             }
 
-        //setNameList((NameList) => NameList.concat(newUser));
+        //setNameList((nameList) => nameList.concat(newUser));
 
         //this is spread operator
-        setNameList((NameList) => [...NameList, newUser]);
+        setNameList((nameList) => [...nameList, newUser]);
      }
 
     //mt-4 means margin top 4
@@ -98,7 +106,7 @@ function NameList(){
         <React.Fragment>
             <div className="container mt-4">
                 <button className="btn btn-primary mb-2" onClick={addUserHandler}>Add Name</button>
-                <ul className="list-group">{NameListComponent()}</ul>
+                <ul className="list-group">{nameListComponent()}</ul>
             </div>
         </React.Fragment>
     );
