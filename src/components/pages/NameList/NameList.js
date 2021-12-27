@@ -12,7 +12,9 @@ function NameList(){
             "last": "Gibson"
             },
         "gender": "male",
-        "city": "kilcoole",
+        "location": {
+            "city": "Kilcoole"
+        },
         "email": "brad.gibson@example.com",
         "dob": {
             "date": "1993-07-20T09:44:18.674Z",
@@ -31,7 +33,9 @@ function NameList(){
             "last": "Bell"
             },
         "gender": "male",
-        "city": "Westminster",
+        "location": {
+            "city": "Westminster"
+        },
         "email": "clifford.bell@example.com",
         "dob": {
             "date": "1996-05-11T08:58:31.195Z",
@@ -63,7 +67,7 @@ function NameList(){
                     dp={aName.picture.medium}
                     name={`${aName.name.title}.${aName.name.first} ${aName.name.last}`} 
                     gender={aName.gender}
-                    city={aName.city}
+                    city={aName.location.city}
                     email={aName.email}
                     dob={aName.dob.date} 
                     age={aName.dob.age}                                      
