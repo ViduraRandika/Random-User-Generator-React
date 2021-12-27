@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
 import NameListItem from "./NameListItem";
 
 function NameList(){
@@ -40,27 +40,12 @@ function NameList(){
             "picture": {
             "medium": "https://randomuser.me/api/portraits/med/men/94.jpg",
             },
-        },
-        {
-        "id": 3,
-        "name": {
-            "title": "Mr",
-            "first": "Clifford",
-            "last": "Bell"
-            },
-        "gender": "male",
-        "city": "Westminster",
-        "email": "clifford.bell@example.com",
-        "dob": {
-            "date": "1996-05-11T08:58:31.195Z",
-            "age": "25"
-            },
-            "phone": "011-962-5516",
-            "picture": {
-            "medium": "https://randomuser.me/api/portraits/med/men/94.jpg",
-            },
         }]
     );
+
+    useEffect(() => {
+        console.log('Render Method Called');
+    });
 
     const NameListComponent = () =>{
         return NameList.map((aName) => {
@@ -83,7 +68,7 @@ function NameList(){
     const addUserHandler = () => {
         const newUser =
             {
-            "id": 1,
+            "id": new Date(),
             "name": {
                 "title": "Mr",
                 "first": "Brad",
