@@ -7,6 +7,10 @@ class NameListC extends Component{
         console.log("Constructor called!");
     }
 
+    componentDidMount(){
+        console.log("componentDidMount Method Called");
+    }
+
     render(){
         return(
             <div className="container mt-4">
