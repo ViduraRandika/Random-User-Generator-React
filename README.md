@@ -4,6 +4,7 @@ ES7 React/Redux/GraphQL/React-Native snippets\
 Material Icon Theme\
 Prettier - Code formatter\
 Bracket Pair Colorizer
+Auto Import - ES6, TS, JSX, TSX
 
 # A free, open-source API for generating random user data. Like Lorem Ipsum, but for people.
 
