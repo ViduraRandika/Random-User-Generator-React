@@ -27,12 +27,11 @@ function Footer(){
                     </div>
                     <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
-                        <Link to="#">Google+ </Link>
+                        <Link to="#">Google </Link>
                         <Link to="#">Facebook </Link>
                         <Link to="#">LinkedIn </Link>
                         <Link to="#">Twitter </Link>
                         <Link to="#">YouTube </Link>
-                        <Link to="#">Mail </Link>
                     </div>
                 </div>
                 <div class="row justify-content-center">             
