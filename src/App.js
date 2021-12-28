@@ -5,6 +5,7 @@ import NameList from "./components/pages/NameList/NameList";
 import HeaderBar from "./components/HeaderBar/HeaderBar";
 import Home from "./components/pages/Home/Home";
 import About from "./components/pages/About/About";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="namelist" element={<NameList />} />
           </Routes>
+          <Footer/>
       </BrowserRouter>
     </div>
   );
