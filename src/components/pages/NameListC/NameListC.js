@@ -14,6 +14,11 @@ class NameListC extends Component{
 
     componentDidUpdate(){
         console.log("componentDidUpdate Method Called");
+        console.log(this.state.message);
+    }
+
+    componentWillMount(){
+        console.log("componentWillMount Method Called");
     }
 
     addNameHandler = () =>{
