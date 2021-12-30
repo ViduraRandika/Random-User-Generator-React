@@ -2,17 +2,24 @@ import React,{Component} from 'react';
 
 class NameListC extends Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         console.log("Constructor called!");
+        this.state = {message: 'Hello state'};
     }
 
     componentDidMount(){
         console.log("componentDidMount Method Called");
     }
 
-    addNameHandler(){
+    componentDidUpdate(){
+        console.log("componentDidUpdate Method Called");
+    }
+
+    addNameHandler = () =>{
         console.log("Add Name button Clicked");
+        console.log(this.state.message);
+        this.setState({message: 'Hello State Changed'});
     }
 
     render(){
