@@ -11,7 +11,28 @@ Auto Import - ES6, TS, JSX, TSX
 https://randomuser.me/
 
 # Display dates and times in JavaScript
+
 https://momentjs.com/
+
+# Simply dummy text of the printing and typesetting industry
+
+https://www.lipsum.com/
+
+# Free premium illustrations Updated weekly
+
+https://illustrationkit.com/
+
+# The internet’s source of freely-usable images
+
+https://unsplash.com/
+
+# The super fast color schemes generator
+
+https://coolors.co/
+
+# Applying a font is easy
+
+https://fonts.google.com/
 
 # Getting Started with Create React App
 
