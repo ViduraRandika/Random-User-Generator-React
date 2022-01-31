@@ -34,6 +34,10 @@ https://coolors.co/
 
 https://fonts.google.com/
 
+# The best free stock photos, royalty free images & videos shared by creators
+
+https://www.pexels.com/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
