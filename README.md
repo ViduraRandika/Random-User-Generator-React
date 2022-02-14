@@ -1,3 +1,9 @@
+# Visit the site
+https://dilshanudawaththa.github.io/Random-User-Generator-React/
+
+# Deploying a React App* to GitHub Pages
+https://github.com/gitname/react-gh-pages
+
 # Install these extentions in VS Code when work with React
 
 ES7 React/Redux/GraphQL/React-Native snippets\
