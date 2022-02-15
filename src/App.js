@@ -14,10 +14,10 @@ function App() {
       <BrowserRouter>
         <HeaderBar/>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/namelist" element={<NameList/>} />
-            <Route path="/namelistc" element={<NameListC/>} />
+            <Route path="Random-User-Generator-React/" element={<Home />} />
+            <Route path="Random-User-Generator-React/about" element={<About/>} />
+            <Route path="Random-User-Generator-React/namelist" element={<NameList/>} />
+            <Route path="Random-User-Generator-React/namelistc" element={<NameListC/>} />
           </Routes>
         <Footer/>
       </BrowserRouter>
