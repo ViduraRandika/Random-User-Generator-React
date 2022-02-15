@@ -36,6 +36,5 @@ jobs:
           echo test, and deploy your project.
           
       - name: Deploy react app to github pages
-  # You may pin to the exact commit or the version.
-  # uses: tanwanimohit/deploy-react-to-ghpages@88c048cc9d31f67a792eec8cf9e94c10eb701dd2
-  uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
+
+      - uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
