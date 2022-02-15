@@ -12,14 +12,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-          <HeaderBar/>
+        <HeaderBar/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About/>} />
             <Route path="namelist" element={<NameList/>} />
             <Route path="namelistc" element={<NameListC/>} />
           </Routes>
-          <Footer/>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
