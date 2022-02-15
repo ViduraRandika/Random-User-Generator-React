@@ -15,9 +15,9 @@ function App() {
         <HeaderBar/>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="about" element={<About/>} />
-            <Route path="namelist" element={<NameList/>} />
-            <Route path="namelistc" element={<NameListC/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/namelist" element={<NameList/>} />
+            <Route path="/namelistc" element={<NameListC/>} />
           </Routes>
         <Footer/>
       </BrowserRouter>
